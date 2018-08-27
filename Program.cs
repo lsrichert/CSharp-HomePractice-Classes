@@ -1,12 +1,14 @@
 ﻿using System;
 
-namespace CarLot
+namespace homePractice-Classes
 {
-    class Program
+    class Car
     {
+    public Car()
+    {
+    }
 
-
-        static void Main(string[] args)
+    static void Main(string[] args)
         {
             Car myCar = new Car();
             myCar.Make = "Oldsmobile";
@@ -36,3 +38,4 @@ namespace CarLot
                 return carValue;
 
           }
+}
