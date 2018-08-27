@@ -1,14 +1,12 @@
 ﻿using System;
 
-namespace homePractice-Classes
+namespace SimpleClasses
 {
-    class Car
+    class Program
     {
-    public Car()
-    {
-    }
 
-    static void Main(string[] args)
+
+        static void Main(string[] args)
         {
             Car myCar = new Car();
             myCar.Make = "Oldsmobile";
@@ -38,4 +36,22 @@ namespace homePractice-Classes
                 return carValue;
 
           }
+            
+    }
+
+    class Car
+    {
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+        public string Color { get; set; }
+        public decimal DetermineMarketValue()
+        {
+            decimal carValue;
+            if (Year > 1990)
+            carValue = 10000;
+            else carValue = 2000;
+            return carValue;
+        }
+    }
 }
